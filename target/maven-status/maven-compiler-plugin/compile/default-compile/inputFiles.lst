@@ -1,0 +1,14 @@
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/FlightDaoImpl.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Flight.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Airline.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Seat.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Food.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Passenger.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/FlightDao.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/ClassType.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/PassengerDaoImpl.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/PassengerDao.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/AirlineDao.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/domain/Trip.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/dao/AirlineDaoImpl.java
+/home/meda/projects/flight/src/main/java/se/lexicon/flight/commonBuilder/Builder.java
