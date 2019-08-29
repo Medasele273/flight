@@ -1,11 +1,11 @@
-package se.lexicon.flight.dao;
+package se.lexicon.flight.daoImpl;
 
+import se.lexicon.flight.dao.PassengerDao;
 import se.lexicon.flight.domain.Passenger;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class PassengerDaoImpl implements PassengerDao {
 

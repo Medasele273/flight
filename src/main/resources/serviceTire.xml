@@ -5,12 +5,8 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "airlineDao" class = "se.lexicon.flight.daoImpl.AirlineDaoImpl">
+    <bean id="airlineService"  class="se.lexicon.flight.serviceImpl.AirlineServiceImpl">
         <constructor-arg name="airlineDao"  ref="airlineDao"/>
-
     </bean>
-
-
-
 
 </beans>

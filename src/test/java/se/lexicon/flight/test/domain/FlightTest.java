@@ -23,7 +23,7 @@ public class FlightTest {
                       .withToCity("STO")
                       .withTicketPrice(5000d)
                       .withTrip(Trip.ONE_WAY)
-                      .withSeatNo(1)
+                      .withTotalSeat(10)
                       .build();
         Assert.assertEquals("1",flight.getFlightNo());
 

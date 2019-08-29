@@ -11,7 +11,7 @@ public class Flight implements Serializable {
 
     private String flightName;
 
-    private int seatNO;
+    private int totalSeats;
 
     private String fromCity;
 
@@ -32,7 +32,7 @@ public class Flight implements Serializable {
     private Flight(Builder builder){
         this.flightNo= Objects.requireNonNull(builder.flightNo,"flightId not be null");
         this.flightName= Objects.requireNonNull(builder.flightName,"flightName not be null");
-        this.seatNO= Objects.requireNonNull(builder.seatNO,"seatNO not be null");
+        this.totalSeats= Objects.requireNonNull(builder.totalSeats,"totalSeats not be null");
         this.fromCity= Objects.requireNonNull(builder.fromCity,"fromCity not be null");
         this.toCity= Objects.requireNonNull(builder.toCity,"toCity not be null");
         this.airline= Objects.requireNonNull(builder.airline,"airline not be null");
@@ -49,8 +49,8 @@ public class Flight implements Serializable {
         return flightName;
     }
 
-    public int getNoOFSeats() {
-        return seatNO;
+    public int getTotalSeats() {
+        return totalSeats;
     }
 
     public String getFromCity() {
@@ -82,7 +82,7 @@ public class Flight implements Serializable {
         return "Builder{" +
                 "flightNo='" + flightNo + '\'' +
                 ", flightName='" + flightName + '\'' +
-                ", noOFSeats=" + seatNO +
+                ", noOFSeats=" + totalSeats +
                 ", fromCity='" + fromCity + '\'' +
                 ", toCity='" + toCity + '\'' +
                 ", airline=" + airline +
@@ -102,7 +102,7 @@ public class Flight implements Serializable {
 
         private String flightName;
 
-        private int seatNO;
+        private int totalSeats;
 
         private String fromCity;
 
@@ -128,8 +128,8 @@ public class Flight implements Serializable {
             return this;
         }
 
-        public Flight.Builder withSeatNo(int seatNO){
-            this.seatNO=seatNO;
+        public Flight.Builder withTotalSeat(int totalSeats){
+            this.totalSeats=totalSeats;
             return this;
         }
 

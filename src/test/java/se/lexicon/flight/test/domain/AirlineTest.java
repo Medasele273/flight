@@ -9,7 +9,7 @@ public class AirlineTest {
     @Test
     public void airlineTest(){
 
-        Airline airline = Airline.builder().withId("1111").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
-        Assert.assertEquals("ETH",airline.getAirlineCode());
+        Airline airline = Airline.builder().withId("01").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
+        Assert.assertEquals("A",airline.getAirlineCode());
     }
 }

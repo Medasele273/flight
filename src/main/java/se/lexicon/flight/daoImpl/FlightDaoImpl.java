@@ -1,5 +1,6 @@
-package se.lexicon.flight.dao;
+package se.lexicon.flight.daoImpl;
 
+import se.lexicon.flight.dao.FlightDao;
 import se.lexicon.flight.domain.Flight;
 
 import java.util.HashMap;

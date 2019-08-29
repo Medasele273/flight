@@ -1,10 +1,10 @@
-package se.lexicon.flight.dao;
+package se.lexicon.flight.service;
 
 import se.lexicon.flight.domain.Airline;
 
 import java.util.List;
 
-public interface AirlineDao {
+public interface AirlineService {
 
     void addAirline(Airline airline);
 
