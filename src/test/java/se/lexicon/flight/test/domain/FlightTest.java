@@ -11,7 +11,7 @@ public class FlightTest {
 
     @Test
     public void flightTest(){
-        Flight flight= Flight.builder().withFlightNo("1")
+        Flight flight= Flight.builder().withFlightNo("01")
                       .withFlightName("Eth Airway")
                       .withAirline(Airline.builder()
                               .withId("1111")

@@ -21,13 +21,13 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public Airline getAirline(String id) {
-        return airlineDao.getAirline(id);
+    public Airline searchAirlineById(String id) {
+        return airlineDao.searchAirlineById(id);
     }
 
     @Override
-    public void removeAirline(String id){
-        airlineDao.removeAirline(id);
+    public void removeAirlineById(String id){
+        airlineDao.removeAirlineById(id);
     }
 
     @Override

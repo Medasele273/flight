@@ -18,9 +18,10 @@ public class AirlineDaoTest {
         airlineDao.addAirline(airline1);
         airlineDao.addAirline(airline2);
 
-        Airline fetched =airlineDao.getAirline("1");
+        Airline fetched =airlineDao.searchAirlineById("2");
 
-        Assert.assertEquals(airline1,fetched);
+        Assert.assertEquals(airline2.getAirlineName(),fetched.getAirlineName());
+
         Assert.assertEquals(2,airlineDao.getAirlines().size());
     }
 }

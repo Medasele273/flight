@@ -10,6 +10,6 @@ public class AirlineTest {
     public void airlineTest(){
 
         Airline airline = Airline.builder().withId("01").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
-        Assert.assertEquals("A",airline.getAirlineCode());
+        Assert.assertEquals("ETH",airline.getAirlineCode());
     }
 }

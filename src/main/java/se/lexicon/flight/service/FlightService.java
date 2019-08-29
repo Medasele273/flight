@@ -1,15 +1,14 @@
-package se.lexicon.flight.dao;
+package se.lexicon.flight.service;
 
 import se.lexicon.flight.domain.Flight;
 
 import java.util.List;
-import java.util.Optional;
 
-public interface FlightDao {
+public interface FlightService {
 
     void addFlight(Flight flight);
 
-   Flight searchFlight(String flightNo);
+    void searchFlightByFlightNo(String flightNO);
 
     List<Flight> getFlights();
 }

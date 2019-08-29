@@ -9,4 +9,8 @@
         <constructor-arg name="airlineDao"  ref="airlineDao"/>
     </bean>
 
+    <bean id="flightService"    class="se.lexicon.flight.serviceImpl.FlightServiceImpl">
+        <constructor-arg name="flightDao"   ref="flightDao"/>
+    </bean>
+
 </beans>

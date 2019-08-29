@@ -8,9 +8,9 @@ public interface AirlineService {
 
     void addAirline(Airline airline);
 
-    Airline getAirline(String id);
+    Airline searchAirlineById(String id);
 
-    void removeAirline(String id);
+    void removeAirlineById(String id);
 
     List<Airline> getAirlines();
 }

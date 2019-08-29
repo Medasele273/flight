@@ -10,6 +10,12 @@ public class Ticket {
 
     private Flight flight;
 
+    private Seat seat;
+
+    private Food food;
+
+    private Double totalPrice;
+
     private Ticket(){
 
     }
@@ -18,6 +24,7 @@ public class Ticket {
         this.ticketNo= Objects.requireNonNull(builder.ticketNo,"ticketNo should not null");
         this.passenger= Objects.requireNonNull(builder.passenger,"passenger should not null");
         this.flight= Objects.requireNonNull(builder.flight,"flight should not null");
+        this.totalPrice=Objects.requireNonNull(builder.totalPrice,"totalPrice ");
     }
 
     public String getTicketNo(){
@@ -32,6 +39,10 @@ public class Ticket {
         return flight;
     }
 
+    public Double getTotalPrice(){
+        return seat.getSeatPrice() + food.getFoodPrice();
+    }
+
     public static Builder builder(){
         return new Builder();
     }
@@ -43,6 +54,8 @@ public class Ticket {
          private Passenger passenger;
 
          private Flight flight;
+
+         private Double totalPrice;
 
 
         public Ticket.Builder withTicketNo(String ticketNo){
@@ -60,7 +73,10 @@ public class Ticket {
             return this;
         }
 
-
+        public Ticket.Builder withTotalPrice(Double totalPrice){
+            this.totalPrice=totalPrice;
+            return this;
+        }
 
         @Override
         public Ticket build() {

@@ -24,13 +24,16 @@ public class AirlineDaoImpl implements  AirlineDao {
     }
 
     @Override
-    public Airline getAirline(String id) {
-        Airline airline = airlines.get(id);
-        return airline;
+    public Airline searchAirlineById(String id) {
+        if (!airlines.containsKey(id)) {
+            throw new RuntimeException("Airline is not Exist");
+        }
+            Airline airline = airlines.get(id);
+           return airline;
     }
 
     @Override
-    public void removeAirline(String id) {
+    public void removeAirlineById(String id) {
         airlines.remove(id);
 
     }

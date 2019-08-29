@@ -13,6 +13,8 @@ public class Passenger implements Serializable {
 
     private String passengerLastName;
 
+    private String email;
+
     private Passenger(){
 
     }
@@ -21,6 +23,7 @@ public class Passenger implements Serializable {
         this.passengerId= Objects.requireNonNull(builder.passengerId,"passengerId should not be null");
         this.passengerFirstName= Objects.requireNonNull(builder.passengerFirstName,"passengerFirstName should not be null");
         this.passengerLastName= Objects.requireNonNull(builder.passengerLastName,"passengerLastName should not be null");
+        this.email= Objects.requireNonNull(builder.email,"email should not be null");
     }
 
     public String getPassengerId(){
@@ -35,6 +38,10 @@ public class Passenger implements Serializable {
         return passengerLastName;
     }
 
+    public String getEmail(){
+        return email;
+    }
+
     public static Builder builder(){
         return new Builder();
     }
@@ -46,6 +53,8 @@ public class Passenger implements Serializable {
         private String passengerFirstName;
 
         private String passengerLastName;
+
+        private String email;
 
         public Passenger.Builder withPassengerId(String passengerId){
             this.passengerId=passengerId;
@@ -59,6 +68,11 @@ public class Passenger implements Serializable {
 
         public Passenger.Builder withPassengerLastName(String passengerLastName){
             this.passengerLastName=passengerLastName;
+            return this;
+        }
+
+        public Passenger.Builder withEmail(String email){
+            this.email=email;
             return this;
         }
 

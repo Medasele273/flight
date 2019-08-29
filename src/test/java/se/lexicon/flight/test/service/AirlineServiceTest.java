@@ -28,9 +28,9 @@ public class AirlineServiceTest {
 
         AirlineService airlineService = new AirlineServiceImpl(airlineDao);
 
-        // TO get One Airline by id
-        System.out.println("Search Airline By id  "  );
-        Airline airline = airlineService.getAirline("01");
+        // TO get One Airline by Id
+        System.out.println("Search Airline By Id  "  );
+        Airline airline = airlineService.searchAirlineById("02");
         System.out.println(airline);
 
         // To get Airlines
@@ -69,7 +69,7 @@ public class AirlineServiceTest {
 
         // To check how many Airlines we have after we remove from Dao
 
-        airlineService.removeAirline("03");
+        airlineService.removeAirlineById("03");
 
         int count=airlineService.getAirlines().size();
         Assert.assertEquals(1,count);

@@ -4,33 +4,39 @@
     <list default="true" id="86d368cd-af37-414c-950e-d2b84b926ec1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/AirlineDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/AirlineDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/AirlineDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/AirlineDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/FlightDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/FlightDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/PassengerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/PassengerDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/ClassType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/ClassType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/FlightDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/FlightDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/PassengerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/PassengerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/AirlineDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/AirlineDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/FlightDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/FlightDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/PassengerDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/PassengerDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/service/AirlineService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/service/AirlineService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/serviceImpl/AirlineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/serviceImpl/AirlineServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/DaoTire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DaoTire.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/serviceTire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/serviceTire.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/dao/AirlineDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/dao/AirlineDaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/domain/AirlineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/domain/AirlineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/domain/FlightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/domain/FlightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/service/AirlineServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/service/AirlineServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/DaoTire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DaoTire.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/AirlineDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/AirlineDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/AirlineDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/FlightDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/PassengerDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Flight$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Flight$Builder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Flight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Flight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/flight-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/flight-1.0.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.FlightTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.FlightTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.FoodTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.FoodTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.PassengerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.domain.PassengerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.FlightTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.FlightTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.FoodTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.FoodTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.PassengerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.domain.PassengerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/FlightDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/FlightDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/PassengerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/PassengerDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/AirlineDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/AirlineDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/FlightDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/FlightDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/PassengerDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/PassengerDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Passenger$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Passenger$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Passenger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Passenger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Ticket$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Ticket$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Ticket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/Ticket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/service/AirlineService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/service/AirlineService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/serviceImpl/AirlineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/serviceImpl/AirlineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/serviceTire.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/serviceTire.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/dao/AirlineDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/dao/AirlineDaoTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/domain/AirlineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/domain/AirlineTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/domain/FlightTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/domain/FlightTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/service/AirlineServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/service/AirlineServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +81,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AirlineServiceTest.testRemoveAirline">
-    <configuration name="AirlineDaoTest.addAirlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FlightDaoTest.testAddFlight">
+    <configuration name="AirlineDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flight" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +92,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="se.lexicon.flight.test.dao" />
       <option name="MAIN_CLASS_NAME" value="se.lexicon.flight.test.dao.AirlineDaoTest" />
-      <option name="METHOD_NAME" value="addAirlineTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,23 +128,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AirlineServiceTest.testRemoveAirline" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightDaoTest.testAddFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="se.lexicon.flight.test.service.*" />
+          <option name="PATTERN" value="se.lexicon.flight.test.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="se.lexicon.flight.test.service" />
-      <option name="MAIN_CLASS_NAME" value="se.lexicon.flight.test.service.AirlineServiceTest" />
-      <option name="METHOD_NAME" value="testRemoveAirline" />
+      <option name="PACKAGE_NAME" value="se.lexicon.flight.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.flight.test.dao.FlightDaoTest" />
+      <option name="METHOD_NAME" value="testAddFlight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AirlineTest.airlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightTest.flightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="flight" />
       <extension name="coverage">
         <pattern>
@@ -148,8 +153,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="se.lexicon.flight.test.domain" />
-      <option name="MAIN_CLASS_NAME" value="se.lexicon.flight.test.domain.AirlineTest" />
-      <option name="METHOD_NAME" value="airlineTest" />
+      <option name="MAIN_CLASS_NAME" value="se.lexicon.flight.test.domain.FlightTest" />
+      <option name="METHOD_NAME" value="flightTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AirlineServiceTest.testRemoveAirline" />
+        <item itemvalue="JUnit.FlightDaoTest.testAddFlight" />
+        <item itemvalue="JUnit.FlightTest.flightTest" />
         <item itemvalue="JUnit.AirlineServiceTest" />
+        <item itemvalue="JUnit.AirlineDaoTest" />
         <item itemvalue="JUnit.AirlineServiceTest.testAddAirlineAndGetAirline" />
-        <item itemvalue="JUnit.AirlineTest.airlineTest" />
-        <item itemvalue="JUnit.AirlineDaoTest.addAirlineTest" />
       </list>
     </recent_temporary>
   </component>
