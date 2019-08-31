@@ -3,9 +3,7 @@ package se.lexicon.flight.domain;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Food implements Serializable {
-
-    private static final long serialVersionUID=1L;
+public class Food  {
 
     private String foodName;
 

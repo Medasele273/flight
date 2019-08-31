@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import se.lexicon.flight.domain.Passenger;
 
-public class PassengerTest {
+public class PassengerTestBuilder {
 
     @Test
     public void testPassenger(){

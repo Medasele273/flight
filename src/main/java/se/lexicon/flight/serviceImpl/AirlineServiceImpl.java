@@ -14,6 +14,7 @@ public class AirlineServiceImpl implements AirlineService {
     public AirlineServiceImpl(AirlineDao airlineDao){
         this.airlineDao= Objects.requireNonNull(airlineDao);
     }
+
     @Override
     public void addAirline(Airline airline) {
         airlineDao.addAirline(airline);
@@ -21,8 +22,8 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public Airline searchAirlineById(String id) {
-        return airlineDao.searchAirlineById(id);
+    public Airline searchAirlineByName(String airlineName) {
+        return airlineDao.searchAirlineByName(airlineName);
     }
 
     @Override

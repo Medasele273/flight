@@ -8,7 +8,7 @@ public interface AirlineService {
 
     void addAirline(Airline airline);
 
-    Airline searchAirlineById(String id);
+    Airline searchAirlineByName(String airlineName);
 
     void removeAirlineById(String id);
 

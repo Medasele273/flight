@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import se.lexicon.flight.domain.Food;
 
-public class FoodTest {
+public class FoodTestBuilder {
 
     @Test
     public void foodTest(){

@@ -42,6 +42,17 @@ public class Passenger implements Serializable {
         return email;
     }
 
+
+    @Override
+    public String toString() {
+        return "Passenger{" +
+                "passengerId='" + passengerId + '\'' +
+                ", passengerFirstName='" + passengerFirstName + '\'' +
+                ", passengerLastName='" + passengerLastName + '\'' +
+                ", email='" + email + '\'' +
+                '}' +'\n';
+    }
+
     public static Builder builder(){
         return new Builder();
     }

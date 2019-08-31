@@ -1,12 +1,10 @@
 package se.lexicon.flight.daoImpl;
 
 import se.lexicon.flight.dao.FlightDao;
+import se.lexicon.flight.domain.Airline;
 import se.lexicon.flight.domain.Flight;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class FlightDaoImpl implements FlightDao {

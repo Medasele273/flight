@@ -15,20 +15,20 @@ public class AirlineDaoImpl implements  AirlineDao {
 
     @Override
     public void addAirline(Airline airline) {
-        if(airlines.containsKey(airline.getId())) {
+        if(airlines.containsKey(airline.getAirlineName())) {
             throw new RuntimeException ("Airline is Exist");
         }
-         airlines.put(airline.getId(),airline);
+         airlines.put(airline.getAirlineName(),airline);
        // airlineDao.addAirline(airline);
 
     }
 
     @Override
-    public Airline searchAirlineById(String id) {
-        if (!airlines.containsKey(id)) {
+    public Airline searchAirlineByName(String airlineName) {
+        if (!airlines.containsKey(airlineName)) {
             throw new RuntimeException("Airline is not Exist");
         }
-            Airline airline = airlines.get(id);
+            Airline airline = airlines.get(airlineName);
            return airline;
     }
 

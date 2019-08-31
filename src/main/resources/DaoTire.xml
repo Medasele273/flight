@@ -12,8 +12,5 @@
     <bean id="passengerDao" class="se.lexicon.flight.daoImpl.PassengerDaoImpl">
         <constructor-arg name ="passengerDao" ref="passengerDao"/>
     </bean>
-
-
-
-
+    
 </beans>

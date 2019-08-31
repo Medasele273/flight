@@ -1,11 +1,13 @@
 package se.lexicon.flight.domain;
 
+import org.springframework.lang.Nullable;
+
 import java.io.Serializable;
 import java.util.Objects;
 
 public class Flight implements Serializable {
 
-    private static final long serialVersionUID=1L;
+    private static final long serialVersionUID = 1L;
 
     private String flightNo;
 
@@ -17,6 +19,10 @@ public class Flight implements Serializable {
 
     private String toCity;
 
+    private String departureDate;
+
+    private String returningDate;
+
     private Airline airline;
 
     private Trip trip;
@@ -25,20 +31,23 @@ public class Flight implements Serializable {
 
     private Double ticketPrice;
 
-    private Flight(){
+    private Flight() {
 
     }
 
-    private Flight(Builder builder){
-        this.flightNo= Objects.requireNonNull(builder.flightNo,"flightId not be null");
-        this.flightName= Objects.requireNonNull(builder.flightName,"flightName not be null");
-        this.totalSeats= Objects.requireNonNull(builder.totalSeats,"totalSeats not be null");
-        this.fromCity= Objects.requireNonNull(builder.fromCity,"fromCity not be null");
-        this.toCity= Objects.requireNonNull(builder.toCity,"toCity not be null");
-        this.airline= Objects.requireNonNull(builder.airline,"airline not be null");
-        this.trip= Objects.requireNonNull(builder.trip,"trip not be null");
-        this.classType= Objects.requireNonNull(builder.classType,"classType not be null");
-        this.ticketPrice= Objects.requireNonNull(builder.ticketPrice,"ticketPrice not be null");
+    private Flight(Builder builder) {
+        this.flightNo = Objects.requireNonNull(builder.flightNo, "flightId not be null");
+        this.flightName = Objects.requireNonNull(builder.flightName, "flightName not be null");
+        this.totalSeats = Objects.requireNonNull(builder.totalSeats, "totalSeats not be null");
+        this.fromCity = Objects.requireNonNull(builder.fromCity, "fromCity not be null");
+        this.toCity = Objects.requireNonNull(builder.toCity, "toCity not be null");
+        this.departureDate = Objects.requireNonNull(builder.departureDate, "departureDate should not be null");
+        this.returningDate =(builder.returningDate );
+        this.airline = Objects.requireNonNull(builder.airline, "airline not be null");
+        this.trip = Objects.requireNonNull(builder.trip, "trip not be null");
+        this.classType = Objects.requireNonNull(builder.classType, "classType not be null");
+        this.ticketPrice = Objects.requireNonNull(builder.ticketPrice, "ticketPrice not be null");
+
     }
 
     public String getFlightNo() {
@@ -65,6 +74,14 @@ public class Flight implements Serializable {
         return airline;
     }
 
+    public String getDepartureDate() {
+        return departureDate;
+    }
+
+    public String getReturningDate() {
+        return returningDate;
+    }
+
     public Trip getTrip() {
         return trip;
     }
@@ -79,12 +96,14 @@ public class Flight implements Serializable {
 
     @Override
     public String toString() {
-        return "Builder{" +
+        return "Flight{" +
                 "flightNo='" + flightNo + '\'' +
                 ", flightName='" + flightName + '\'' +
-                ", noOFSeats=" + totalSeats +
+                ", totalSeats=" + totalSeats +
                 ", fromCity='" + fromCity + '\'' +
                 ", toCity='" + toCity + '\'' +
+                ", departureDate='" + departureDate + '\'' +
+                ", returningDate='" + returningDate + '\'' +
                 ", airline=" + airline +
                 ", trip=" + trip +
                 ", classType=" + classType +
@@ -92,11 +111,11 @@ public class Flight implements Serializable {
                 '}';
     }
 
-    public static Builder builder(){
+    public static Builder builder() {
         return new Builder();
     }
 
-    public static class Builder implements se.lexicon.flight.commonBuilder.Builder<Flight>{
+    public static class Builder implements se.lexicon.flight.commonBuilder.Builder<Flight> {
 
         private String flightNo;
 
@@ -108,6 +127,10 @@ public class Flight implements Serializable {
 
         private String toCity;
 
+        private String departureDate;
+
+        private String returningDate;
+
         private Airline airline;
 
         private Trip trip;
@@ -117,54 +140,64 @@ public class Flight implements Serializable {
         private Double ticketPrice;
 
 
-
-        public Flight.Builder withFlightNo(String flightNo){
-            this.flightNo=flightNo;
+        public Flight.Builder withFlightNo(String flightNo) {
+            this.flightNo = flightNo;
             return this;
         }
 
-        public Flight.Builder withFlightName(String flightName){
-            this.flightName=flightName;
+        public Flight.Builder withFlightName(String flightName) {
+            this.flightName = flightName;
             return this;
         }
 
-        public Flight.Builder withTotalSeat(int totalSeats){
-            this.totalSeats=totalSeats;
+        public Flight.Builder withTotalSeat(int totalSeats) {
+            this.totalSeats = totalSeats;
             return this;
         }
 
-        public Flight.Builder withFromCity(String fromCity){
-            this.fromCity=fromCity;
+        public Flight.Builder withFromCity(String fromCity) {
+            this.fromCity = fromCity;
             return this;
         }
 
-        public Flight.Builder withToCity(String toCity){
-            this.toCity=toCity;
+        public Flight.Builder withToCity(String toCity) {
+            this.toCity = toCity;
             return this;
         }
 
-        public Flight.Builder withAirline(Airline airline){
-            this.airline=airline;
+        public Flight.Builder withDepartureDate(String departureDate) {
+            this.departureDate = departureDate;
             return this;
         }
 
-        public Flight.Builder withTrip(Trip trip){
-            this.trip=trip;
-            return this;
-        }
+            public Flight.Builder withReturningDate(String returningDate) {
+                this.returningDate = returningDate;
+                return this;
+            }
 
-        public Flight.Builder withClassType(ClassType classType){
-            this.classType=classType;
-            return this;
-        }
+            public Flight.Builder withAirline (Airline airline){
+                this.airline = airline;
+                return this;
+            }
 
-        public Flight.Builder withTicketPrice(Double ticketPrice){
-            this.ticketPrice=ticketPrice;
-            return this;
-        }
-        @Override
-        public Flight build() {
-            return new Flight(this);
+            public Flight.Builder withTrip (Trip trip){
+                this.trip = trip;
+                return this;
+            }
+
+            public Flight.Builder withClassType (ClassType classType){
+                this.classType = classType;
+                return this;
+            }
+
+            public Flight.Builder withTicketPrice (Double ticketPrice){
+                this.ticketPrice = ticketPrice;
+                return this;
+            }
+
+            @Override
+            public Flight build () {
+                return new Flight(this);
+            }
         }
     }
-}

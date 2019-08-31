@@ -43,6 +43,7 @@ public class EconomyClass {
             this.seats=seats;
             return this;
         }
+
         @Override
         public EconomyClass build() {
             return new EconomyClass(this);

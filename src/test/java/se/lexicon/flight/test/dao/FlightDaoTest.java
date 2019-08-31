@@ -17,27 +17,32 @@ public class FlightDaoTest {
     public void testAddFlight(){
 
         FlightDao flightDao =new FlightDaoImpl();
+
         Flight flight1=Flight.builder().withFlightNo("EK1")
-                       .withFlightName("AirBus A380-800")
-                       .withFromCity("Dubai")
-                       .withToCity("London")
-                       .withTotalSeat(10)
-                       .withTrip(Trip.ROUND_TRIP)
-                       .withClassType(ClassType.ECONOMY)
-                       .withTicketPrice(5000d)
-                       .withAirline(Airline.builder()
-                               .withId("01")
-                               .withAirlineName("Emirates")
-                               .withAirlineCode("UAE1")
-                               .build())
+                        .withFlightName("AirBus A380-800")
+                        .withAirline(Airline.builder()
+                                  .withId("01")
+                                  .withAirlineName("Emirates")
+                                  .withAirlineCode("UAE1")
+                                  .build())
+                         .withTrip(Trip.ROUND_TRIP)
+                         .withFromCity("Dubai")
+                         .withToCity("London")
+                         .withDepartureDate("09-09-2019")
+                         .withReturningDate("30-09-2019")
+                         .withClassType(ClassType.ECONOMY)
+                         .withTotalSeat(10)
+                          .withTicketPrice(5000d)
                             .build();
 
         flightDao.addFlight(flight1);
 
-       Flight flight=flightDao.searchFlight("EK1");
+       Flight flight=flightDao.searchFlight("Dubai");
 
-        Assert.assertEquals(flight,flight1);
+        Assert.assertEquals(flight.getAirline().getAirlineName(),flight1.getAirline().getAirlineName());
 
-        System.out.println(flight1);
+       Assert.assertEquals(flight,flight1);
+
+        System.out.println(flight);
     }
 }

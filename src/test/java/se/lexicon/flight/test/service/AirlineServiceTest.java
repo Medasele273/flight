@@ -30,7 +30,7 @@ public class AirlineServiceTest {
 
         // TO get One Airline by Id
         System.out.println("Search Airline By Id  "  );
-        Airline airline = airlineService.searchAirlineById("02");
+        Airline airline = airlineService.searchAirlineByName("Lufthansa");
         System.out.println(airline);
 
         // To get Airlines

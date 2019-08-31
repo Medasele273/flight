@@ -8,7 +8,7 @@ public interface FlightService {
 
     void addFlight(Flight flight);
 
-    void searchFlightByFlightNo(String flightNO);
+    Flight searchFlightByFlightNo(String flightNO);
 
     List<Flight> getFlights();
 }

@@ -22,8 +22,8 @@ public class FlightServiceImpl implements FlightService {
     }
 
     @Override
-    public void searchFlightByFlightNo(String flightNO) {
-
+    public Flight searchFlightByFlightNo(String flightNO) {
+       return flightDao.searchFlight(flightNO);
     }
 
     @Override

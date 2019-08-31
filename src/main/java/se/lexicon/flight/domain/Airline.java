@@ -41,7 +41,7 @@ public class Airline implements Serializable {
                 "id='" + id + '\'' +
                 ", airlineCode='" + airlineCode + '\'' +
                 ", airlineName='" + airlineName + '\'' +
-                '}';
+                '}' ;
     }
 
     public static Builder builder(){
