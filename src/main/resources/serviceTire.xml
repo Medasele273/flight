@@ -13,4 +13,9 @@
         <constructor-arg name="flightDao"   ref="flightDao"/>
     </bean>
 
+    <bean id="ticketService"    class="se.lexicon.flight.serviceImpl.TicketServiceImpl">
+        <constructor-arg name="ticketDao"   ref="ticketDao"/>
+    </bean>
+
+
 </beans>

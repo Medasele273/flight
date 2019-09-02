@@ -22,7 +22,7 @@ public class AdminTest {
     FlightDao flightDao = new FlightDaoImpl();
     PassengerDao passengerDao=new PassengerDaoImpl();
     UsersDao usersDao=new UsersImpl();
-    Admin admin= new AdminImpl();
+    Admin admin= new AdminImpl(airlineDao,flightDao,passengerDao,usersDao);
 
     @Test
     public void testAirline(){
@@ -33,12 +33,12 @@ public class AdminTest {
         Airline airline2=Airline.builder().withId("02").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
 
         // To Add Airlines to DAO
-        airlineDao.addAirline(airline1);
-        airlineDao.addAirline(airline2);
+        admin.addAirline(airline1);
+        admin.addAirline(airline2);
 
         // To get List Of Airline we have
 
-        Collection<Airline> airlines =airlineDao.getAirlines();
+        Collection<Airline> airlines =admin.getAirlines();
         System.out.println("List of Airlines :");
         System.out.println(airlines);
 
@@ -47,7 +47,7 @@ public class AdminTest {
         airlineDao.removeAirlineByAirlineName("Ethiopian Airline");
 
         // List of Airlines After Removing Airline
-        Collection<Airline> airlines1=airlineDao.getAirlines();
+        Collection<Airline> airlines1=admin.getAirlines();
         System.out.println("List of Airlines After Removing :");
         System.out.println(airlines1);
 
@@ -120,7 +120,7 @@ public class AdminTest {
 
         // To Remove Flights
 
-        flightDao.cancelFlight("ETH01");
+        flightDao.cancelFlight("AA1");
         System.out.println("List of Flights After Removing ");
         Collection<Flight> flights1=flightDao.getFlights();
         System.out.println(flights1);

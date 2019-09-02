@@ -17,10 +17,6 @@ public class AirlineDaoImpl implements  AirlineDao {
 
     }
 
-    public AirlineDaoImpl(Map<String,Airline> airlines){
-        this.airlines=Objects.requireNonNull(airlines);
-    }
-
     @Override
     public void addAirline(Airline airline) {
         if(airlines.containsKey(airline.getAirlineName())) {

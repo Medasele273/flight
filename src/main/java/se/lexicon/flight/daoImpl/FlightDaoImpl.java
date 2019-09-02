@@ -15,9 +15,9 @@ public class FlightDaoImpl implements FlightDao {
 
     }
 
-    public FlightDaoImpl(Map<String,Flight> flights){
+    /*public FlightDaoImpl(Map<String,Flight> flights){
         this.flights=Objects.requireNonNull(flights);
-    }
+    }*/
 
     @Override
     public void addFlight(Flight flight) {

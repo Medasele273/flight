@@ -58,7 +58,7 @@ public class Ticket {
                 ", flight=" + flight +
                 ", seat=" + seat +
                 ", food=" + food +
-                '}';
+                '}' +'\n'+'\n';
     }
 
     /* public Double getTicketPrice(){

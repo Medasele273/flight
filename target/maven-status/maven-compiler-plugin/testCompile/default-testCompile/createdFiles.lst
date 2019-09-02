@@ -1,4 +1,13 @@
-se/lexicon/flight/test/domain/PassengerTest.class
-se/lexicon/flight/test/domain/FlightTest.class
-se/lexicon/flight/test/domain/AirlineTest.class
-se/lexicon/flight/test/domain/FoodTest.class
+se/lexicon/flight/test/domain/FoodTestBuilder.class
+se/lexicon/flight/test/dao/FlightDaoTest.class
+se/lexicon/flight/test/admin/AdminTest.class
+se/lexicon/flight/test/client/ClientTest.class
+se/lexicon/flight/test/dao/UsersDaoTest.class
+se/lexicon/flight/test/service/FlightServiceTest.class
+se/lexicon/flight/test/domain/FlightTestBuilder.class
+se/lexicon/flight/test/dao/PassengerDaoTest.class
+se/lexicon/flight/test/domain/UsersTestBuilder.class
+se/lexicon/flight/test/domain/PassengerTestBuilder.class
+se/lexicon/flight/test/service/AirlineServiceTest.class
+se/lexicon/flight/test/dao/AirlineDaoTest.class
+se/lexicon/flight/test/domain/AirlineTestBuilder.class

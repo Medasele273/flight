@@ -9,10 +9,7 @@ import se.lexicon.flight.domain.Flight;
 import se.lexicon.flight.domain.Passenger;
 import se.lexicon.flight.domain.Users;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class AdminImpl implements Admin {
@@ -24,7 +21,16 @@ public class AdminImpl implements Admin {
     private PassengerDao passengerDao;
 
     private UsersDao  usersDao;
+
     private Map<Object,Object> objectMap = new HashMap<>();
+
+    public AdminImpl(AirlineDao airlineDao,FlightDao flightDao,PassengerDao passengerDao,UsersDao usersDao){
+        this.airlineDao= Objects.requireNonNull(airlineDao,"airlineDao");
+        this.flightDao= Objects.requireNonNull(flightDao,"flightDao");
+        this.passengerDao= Objects.requireNonNull(passengerDao,"passengerDao");
+        this.usersDao= Objects.requireNonNull(usersDao,"usersDao");
+
+    }
 
 
     @Override
@@ -59,7 +65,10 @@ public class AdminImpl implements Admin {
 
     @Override
     public void cancelFlight(String flightNo) {
-       flightDao.cancelFlight(flightNo);
+       if (!flightDao.getFlights().contains(flightNo)){
+           throw new RuntimeException("sorry  no Flight ");
+       }
+        flightDao.cancelFlight(flightNo);
        }
 
 

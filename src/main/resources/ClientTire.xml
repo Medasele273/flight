@@ -8,5 +8,6 @@
     <bean id="client" class="se.lexicon.flight.client.ClientImpl">
         <constructor-arg name="airlineService" ref="airlineService"/>
         <constructor-arg name="flightService"  ref="flightService"/>
+        <constructor-arg name="ticketService"  ref="ticketService"/>
     </bean>
 </beans>

@@ -13,6 +13,7 @@ public class TicketDaoImpl implements TicketDao {
 
 
     private Map<String,Ticket> tickets = new HashMap<>();
+
     @Override
     public void bookTicket(Ticket ticket) {
        if(tickets.containsKey(ticket.getTicketNo())){
@@ -36,12 +37,13 @@ public class TicketDaoImpl implements TicketDao {
         Double foodPrice=0.0d;
         Double totalPrice=0.0d;
 
-  Iterator<Ticket> iterator =tickets.values().iterator();
+  //Iterator<Ticket> iterator =tickets.values().iterator();
  //for (int i = 1; i<=tickets.size()+1;i++) {
+        Iterator<Map.Entry<String, Ticket>> iterator = tickets.entrySet().stream().iterator();
         while (iterator.hasNext()) {
-            flightPrice = iterator.next().getFlight().getTicketPrice();
+            flightPrice = tickets.values().stream().iterator().next().getFlight().getTicketPrice();
             //flightPrice = tickets.values().stream().iterator().next().getFlight().getTicketPrice();
-            foodPrice = iterator.next().getFood().getFoodPrice();
+            foodPrice = tickets.values().stream().iterator() .next().getFood().getFoodPrice();
             //  foodPrice=tickets.get(i).getFood().getFoodPrice();
         }
      totalPrice = flightPrice + foodPrice;
@@ -53,9 +55,9 @@ public class TicketDaoImpl implements TicketDao {
 
     @Override
     public Collection<Ticket> getAllTickets() {
-        return tickets.values().stream().map(t->Ticket.builder().withTicketNo(t.getTicketNo()).withSeat(
+      /*  return tickets.values().stream().map(t->Ticket.builder().withTicketNo(t.getTicketNo()).withSeat(
                 Seat.builder().withSeatNo("").build()
-        ).withFlight(Flight.builder()
+                 ).withFlight(Flight.builder()
                 .withFlightNo(t.getFlight().getFlightNo()).withFlightName(t.getFlight().getFlightName())
                 .withDepartureDate(t.getFlight().getDepartureDate()).withReturningDate(t.getFlight().getReturningDate())
                 .withFromCity(t.getFlight().getFromCity()).withToCity(t.getFlight().getToCity())
@@ -67,6 +69,7 @@ public class TicketDaoImpl implements TicketDao {
                 .withPassenger(Passenger.builder().withPassengerId(t.getPassenger().getPassengerId())
                         .withPassengerFirstName(t.getPassenger().getPassengerFirstName()).withPassengerLastName(t.getPassenger().getPassengerLastName())
                         .withEmail(t.getPassenger().getEmail()).build()).build()).collect(Collectors.toList());
+    }*/
+        return tickets.values().stream().collect(Collectors.toList());
     }
-
 }

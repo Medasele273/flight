@@ -1,4 +1,13 @@
-/home/meda/projects/flight/src/test/java/se/lexicon/flight/test/domain/AirlineTest.java
-/home/meda/projects/flight/src/test/java/se/lexicon/flight/test/domain/PassengerTest.java
-/home/meda/projects/flight/src/test/java/se/lexicon/flight/test/domain/FlightTest.java
-/home/meda/projects/flight/src/test/java/se/lexicon/flight/test/domain/FoodTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/domain/FlightTestBuilder.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/client/ClientTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/domain/FoodTestBuilder.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/domain/UsersTestBuilder.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/service/FlightServiceTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/domain/PassengerTestBuilder.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/PassengerDaoTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/domain/AirlineTestBuilder.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/AirlineDaoTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/UsersDaoTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/service/AirlineServiceTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/admin/AdminTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/FlightDaoTest.java

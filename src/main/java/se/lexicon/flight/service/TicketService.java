@@ -10,4 +10,5 @@ public interface TicketService {
     Ticket searchTicket(String ticketNO);
     Collection<Ticket> getAllTickets();
     Double ticketPrice();
+    Double totalIncome();
 }
