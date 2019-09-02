@@ -11,7 +11,11 @@ public interface FlightDao {
 
     void addFlight(Flight flight);
 
-   Flight searchFlight(String flightNo);
+   Collection<Flight> searchFlightByAirlineName(String airlineName);
+
+   Collection<Flight> searchFlightByCityAndDate(String fromCity,String toCity,String departureDate);
 
     List<Flight> getFlights();
+
+    void cancelFlight(String flightNo);
 }

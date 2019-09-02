@@ -14,7 +14,7 @@ public class Ticket {
 
     private Food food;
 
-    private Double ticketPrice;
+   // private Double ticketPrice;
 
     private Ticket(){
 
@@ -25,7 +25,9 @@ public class Ticket {
         this.ticketNo= Objects.requireNonNull(builder.ticketNo,"ticketNo should not null");
         this.passenger= Objects.requireNonNull(builder.passenger,"passenger should not null");
         this.flight= Objects.requireNonNull(builder.flight,"flight should not null");
-        this.ticketPrice=Objects.requireNonNull(builder.ticketPrice,"ticketPrice should not be Null ");
+        this.food= Objects.requireNonNull(builder.food,"food should not null");
+        this.seat= Objects.requireNonNull(builder.seat,"flight should not null");
+       // this.ticketPrice=Objects.requireNonNull(builder.ticketPrice,"ticketPrice should not be Null ");
     }
 
     public String getTicketNo(){
@@ -40,9 +42,28 @@ public class Ticket {
         return flight;
     }
 
-    public Double getTicketPrice(){
-        return ticketPrice;
+    public Seat getSeat(){
+        return seat;
     }
+
+    public Food getFood(){
+        return food;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "ticketNo='" + ticketNo + '\'' +
+                ", passenger=" + passenger +
+                ", flight=" + flight +
+                ", seat=" + seat +
+                ", food=" + food +
+                '}';
+    }
+
+    /* public Double getTicketPrice(){
+        return ticketPrice;
+    }*/
 
     public static Builder builder(){
         return new Builder();
@@ -55,6 +76,9 @@ public class Ticket {
          private Passenger passenger;
 
          private Flight flight;
+
+         private Food food;
+         private Seat seat;
 
          private Double ticketPrice;
 
@@ -74,8 +98,18 @@ public class Ticket {
             return this;
         }
 
-        public Ticket.Builder withTicketPrice(Double ticketPrice){
+      /*  public Ticket.Builder withTicketPrice(Double ticketPrice){
             this.ticketPrice=ticketPrice;
+            return this;
+        }
+*/
+        public Ticket.Builder withFood(Food food){
+            this.food =food;
+            return this;
+        }
+
+        public Ticket.Builder withSeat(Seat seat){
+            this.seat=seat;
             return this;
         }
 

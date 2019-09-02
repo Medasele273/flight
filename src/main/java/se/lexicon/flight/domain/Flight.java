@@ -108,7 +108,7 @@ public class Flight implements Serializable {
                 ", trip=" + trip +
                 ", classType=" + classType +
                 ", ticketPrice=" + ticketPrice +
-                '}';
+                '}'+'\n' ;
     }
 
     public static Builder builder() {

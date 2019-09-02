@@ -3,15 +3,20 @@ package se.lexicon.flight.daoImpl;
 import se.lexicon.flight.dao.PassengerDao;
 import se.lexicon.flight.domain.Passenger;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class PassengerDaoImpl implements PassengerDao {
 
      private Map<String,Passenger> passengers =new HashMap<>();
+
+     public PassengerDaoImpl(){
+
+     }
+
+     public PassengerDaoImpl(Map<String,Passenger> passengers){
+         this.passengers= Objects.requireNonNull(passengers);
+     }
     
     @Override
     public void addPassenger(Passenger passenger) {
@@ -34,7 +39,7 @@ public class PassengerDaoImpl implements PassengerDao {
     }
 */
     @Override
-    public List<Passenger> getPassengers(){
+    public Collection<Passenger> getPassengers(){
         return passengers.values().stream().map(passenger -> Passenger.builder()
                                             .withPassengerId(passenger.getPassengerId())
                                             .withPassengerFirstName(passenger.getPassengerFirstName())

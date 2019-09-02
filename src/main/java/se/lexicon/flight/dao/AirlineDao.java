@@ -10,7 +10,7 @@ public interface AirlineDao {
 
     Airline searchAirlineByName(String airlineName);
 
-    void removeAirlineById(String id);
+    void removeAirlineByAirlineName(String airlineName);
 
     List<Airline> getAirlines();
 }

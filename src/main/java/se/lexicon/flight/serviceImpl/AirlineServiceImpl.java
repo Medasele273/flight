@@ -27,8 +27,8 @@ public class AirlineServiceImpl implements AirlineService {
     }
 
     @Override
-    public void removeAirlineById(String id){
-        airlineDao.removeAirlineById(id);
+    public void removeAirlineByAirlineName(String airlineName){
+        airlineDao.removeAirlineByAirlineName(airlineName);
     }
 
     @Override

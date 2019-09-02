@@ -13,6 +13,14 @@ public class AirlineDaoImpl implements  AirlineDao {
 
     private Map<String,Airline> airlines = new HashMap<>();
 
+    public AirlineDaoImpl(){
+
+    }
+
+    public AirlineDaoImpl(Map<String,Airline> airlines){
+        this.airlines=Objects.requireNonNull(airlines);
+    }
+
     @Override
     public void addAirline(Airline airline) {
         if(airlines.containsKey(airline.getAirlineName())) {
@@ -33,8 +41,12 @@ public class AirlineDaoImpl implements  AirlineDao {
     }
 
     @Override
-    public void removeAirlineById(String id) {
-        airlines.remove(id);
+    public void removeAirlineByAirlineName(String airlineName) {
+        if(airlines.containsKey(airlineName)) {
+            airlines.remove(airlineName);
+        }else {
+            System.out.println("No Airline is Available By " + airlineName);
+        }
 
     }
 

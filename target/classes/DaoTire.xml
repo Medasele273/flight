@@ -5,15 +5,22 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <!-- To inject the constructor in AirlineDaoImpl !-->
+
     <bean id = "airlineDao" class = "se.lexicon.flight.daoImpl.AirlineDaoImpl">
         <constructor-arg name="airlineDao"  ref="airlineDao"/>
     </bean>
 
+    <!-- To inject the constructor in PassengerDaoImpl !-->
+
     <bean id="passengerDao" class="se.lexicon.flight.daoImpl.PassengerDaoImpl">
-        <constructor-arg name ="passengerDao" ref="passengerDao"/>
+        <constructor-arg name ="passengers" ref="passengers"/>
     </bean>
 
+    <!-- To inject the constructor in FlightDaoImpl !-->
 
-
+    <bean id="flightDao" class="se.lexicon.flight.daoImpl.FlightDaoImpl">
+        <constructor-arg name="flights" ref="flights"/>
+    </bean>
 
 </beans>

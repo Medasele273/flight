@@ -28,17 +28,16 @@ public class AirlineServiceTest {
 
         AirlineService airlineService = new AirlineServiceImpl(airlineDao);
 
-        // TO get One Airline by Id
-        System.out.println("Search Airline By Id  "  );
+        // TO get One Airline by Name
+        System.out.println("Search Airline By Name  "  );
         Airline airline = airlineService.searchAirlineByName("Lufthansa");
         System.out.println(airline);
 
-        // To get Airlines
+        // To get All Airlines
         System.out.println("List of Airlines = " + airlineService.getAirlines().size());
 
         List<Airline> airlines= airlineService.getAirlines();
         System.out.print(airlines);
-
 
         Assert.assertEquals(2,airlineService.getAirlines().size());
     }
@@ -65,16 +64,19 @@ public class AirlineServiceTest {
         int size=airlineService.getAirlines().size();
         Assert.assertEquals(2,size);
         List<Airline> airlines=airlineService.getAirlines();
-        System.out.println("List of Airlines before removing from Dao :" + airlines);
-
+        System.out.println("List of Airlines before removing from Dao :");
+        System.out.println("=================================================================================================");
+        System.out.println(airlines);
         // To check how many Airlines we have after we remove from Dao
 
-        airlineService.removeAirlineById("03");
-
+        airlineService.removeAirlineByAirlineName("Ethiopian Airline");
+        System.out.println();
         int count=airlineService.getAirlines().size();
         Assert.assertEquals(1,count);
         List<Airline> airlines1=airlineService.getAirlines();
-        System.out.println("List of Airlines After removing from Dao :" + airlines1+ '\n');
+        System.out.println("List of Airlines After removing from Dao :");
+        System.out.println("==================================================================================================");
+        System.out.println(airlines1);
 
     }
 }

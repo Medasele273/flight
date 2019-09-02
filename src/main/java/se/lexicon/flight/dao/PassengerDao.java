@@ -2,6 +2,7 @@ package se.lexicon.flight.dao;
 
 import se.lexicon.flight.domain.Passenger;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -13,5 +14,5 @@ public interface PassengerDao {
 
  //   Passenger searchAndGetPassenger(String passengerId);
 
-    List<Passenger> getPassengers();
+    Collection<Passenger> getPassengers();
 }

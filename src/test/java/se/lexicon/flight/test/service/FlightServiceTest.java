@@ -11,6 +11,7 @@ import se.lexicon.flight.domain.Trip;
 import se.lexicon.flight.service.FlightService;
 import se.lexicon.flight.serviceImpl.FlightServiceImpl;
 
+import java.util.Collection;
 import java.util.List;
 
 public class FlightServiceTest {
@@ -23,63 +24,68 @@ public class FlightServiceTest {
     @Test
     public void testAddFlight(){
 
-
         Flight flight1=Flight.builder().withFlightNo("EK1")
                 .withFlightName("AirBus A380-800")
-                .withFromCity("Dubai")
-                .withToCity("London")
-                .withTotalSeat(10)
-                .withTrip(Trip.ROUND_TRIP)
-                .withClassType(ClassType.ECONOMY)
-                .withTicketPrice(5000d)
                 .withAirline(Airline.builder()
                         .withId("01")
                         .withAirlineName("Emirates")
                         .withAirlineCode("UAE1")
                         .build())
+                .withTrip(Trip.ROUND_TRIP)
+                .withFromCity("Dubai")
+                .withToCity("London")
+                .withDepartureDate("09-09-2019")
+                .withReturningDate("30-09-2019")
+                .withClassType(ClassType.BUSINESS)
+                .withTotalSeat(10)
+                .withTicketPrice(20000d)
                 .build();
 
       flightDao.addFlight(flight1);
 
-      Flight flight = flightService.searchFlightByFlightNo("EK1");
+     Collection <Flight> flights = flightService.searchFlightByAirlineName("Emirates");
 
-        Assert.assertEquals(flight,flight1);
+      //  Assert.assertEquals(flights,flight1);
 
-        System.out.println(flight);
+        System.out.println(flights);
 
     }
 
     @Test
     public void testToGetAllFlights(){
 
-        Flight flight1 =Flight.builder().withFlightNo("EK1")
-                .withFlightName("AirBus A380-800")
-                .withFromCity("Dubai")
-                .withToCity("London")
-                .withTotalSeat(10)
-                .withTrip(Trip.ROUND_TRIP)
-                .withClassType(ClassType.ECONOMY)
-                .withTicketPrice(5000d)
-                .withAirline(Airline.builder()
-                        .withId("01")
-                        .withAirlineName("Emirates")
-                        .withAirlineCode("UAE1")
-                        .build())
-                .build();
-
-        Flight flight2 = Flight.builder().withFlightNo("01")
-                .withFlightName("Eth Airway")
+        Flight flight1= Flight.builder().withFlightNo("01")
+                .withFlightName("Ethio Airway")
                 .withAirline(Airline.builder()
                         .withId("1111")
                         .withAirlineName("Ethiopia Airline")
                         .withAirlineCode("ETH")
                         .build())
-                .withClassType(ClassType.ECONOMY)
+                .withTrip(Trip.ONE_WAY)
                 .withFromCity("ADD")
                 .withToCity("STO")
+                .withDepartureDate("2019-09-10")
+                //.withReturningDate("2019-09-20")
+                .withClassType(ClassType.ECONOMY)
                 .withTicketPrice(5000d)
-                .withTrip(Trip.ONE_WAY)
                 .withTotalSeat(10)
+                .build();
+
+        Flight flight2=Flight.builder().withFlightNo("EK1")
+                .withFlightName("AirBus A380-800")
+                .withAirline(Airline.builder()
+                        .withId("01")
+                        .withAirlineName("Emirates")
+                        .withAirlineCode("UAE1")
+                        .build())
+                .withTrip(Trip.ROUND_TRIP)
+                .withFromCity("Dubai")
+                .withToCity("London")
+                .withDepartureDate("09-09-2019")
+                .withReturningDate("30-09-2019")
+                .withClassType(ClassType.ECONOMY)
+                .withTotalSeat(10)
+                .withTicketPrice(5000d)
                 .build();
 
         flightDao.addFlight(flight1);

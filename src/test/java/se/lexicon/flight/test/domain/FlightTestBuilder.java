@@ -13,7 +13,7 @@ public class FlightTestBuilder {
     public void flightTest(){
 
         Flight flight= Flight.builder().withFlightNo("01")
-                      .withFlightName("Eth Airway")
+                      .withFlightName("Ethio Airway")
                       .withAirline(Airline.builder()
                               .withId("1111")
                               .withAirlineName("Ethiopia Airline")

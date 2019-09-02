@@ -27,6 +27,14 @@ public class Food  {
         return foodPrice;
     }
 
+    @Override
+    public String toString() {
+        return "Food{" +
+                "foodName='" + foodName + '\'' +
+                ", foodPrice=" + foodPrice +
+                '}';
+    }
+
     public static Builder builder(){
         return new Builder();
     }

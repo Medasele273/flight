@@ -59,15 +59,16 @@ public class LoginClassImpl implements LogIn{
 
             if (user.getUserName().equals(client) && user.getPassword().equals(password)) {
                 System.out.println("You logged in As Client");
-                  break;
+                           break;
 
             } else if (!user.getUserName().equals(client) && user.getPassword().equals(password)) {
                 System.out.println("You Entered wrong User Name");
 
             }else if(!user.getUserName().equals(client) && !user.getPassword().equals(password)){
                 System.out.println("You Entered wrong User Name and password");
-            }else {
-                System.out.println("");
+
+            }else if(!user.getUserName().isEmpty() && !user.getPassword().isEmpty()){
+                System.out.println("You Must Enter User Name and  PassWord");
             }
 
         }while (!flag);

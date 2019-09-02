@@ -5,6 +5,8 @@ import se.lexicon.flight.dao.PassengerDao;
 import se.lexicon.flight.daoImpl.PassengerDaoImpl;
 import se.lexicon.flight.domain.Passenger;
 
+import java.sql.SQLOutput;
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
@@ -49,8 +51,8 @@ public class PassengerDaoTest {
         System.out.println();
 
         // To get List of Passengers that we have in our DataBase(Map)
-
-        List<Passenger> passengers = passengerDao.getPassengers();
+        System.out.println("To List All passengers in our dataBase(Map)");
+        Collection<Passenger> passengers = passengerDao.getPassengers();
         System.out.println(passengers);
 
     }
