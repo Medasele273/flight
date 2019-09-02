@@ -83,8 +83,8 @@ public class TicketServiceTest {
         System.out.println(tickets);
 
 
-        Double t= ticketService.ticketPrice();
-        System.out.println("Ticket Price :");
+        Double t= ticketDao.ticketPrice("P1");
+        System.out.println("Ticket Price for one Person is :");
         System.out.println(t);
 
         Double t2 =ticketService.totalIncome();

@@ -32,7 +32,7 @@ public class TicketDaoImpl implements TicketDao {
     }
 
     @Override
-    public Double ticketPrice(){
+    public Double ticketPrice(String passengerId){
         Double flightPrice=0.0d;
         Double foodPrice=0.0d;
         Double totalPrice=0.0d;
@@ -40,13 +40,16 @@ public class TicketDaoImpl implements TicketDao {
   //Iterator<Ticket> iterator =tickets.values().iterator();
  //for (int i = 1; i<=tickets.size()+1;i++) {
         Iterator<Map.Entry<String, Ticket>> iterator = tickets.entrySet().stream().iterator();
-        while (iterator.hasNext()) {
-            flightPrice = tickets.values().stream().iterator().next().getFlight().getTicketPrice();
+       // while (iterator.hasNext()) {
+
+            flightPrice=tickets.entrySet().stream().filter(x->passengerId.equalsIgnoreCase(passengerId)).map(x->x.getValue()).collect(Collectors.summingDouble(ticket1 -> ticket1.getFlight().getTicketPrice()));
+            foodPrice=tickets.entrySet().stream().filter(x->passengerId.equalsIgnoreCase(passengerId)).map(x->x.getValue()).collect(Collectors.summingDouble(ticket1 -> ticket1.getFood().getFoodPrice()));
+           // flightPrice = tickets.values().stream().iterator().next().getFlight().getTicketPrice();
             //flightPrice = tickets.values().stream().iterator().next().getFlight().getTicketPrice();
-            foodPrice = tickets.values().stream().iterator() .next().getFood().getFoodPrice();
+           // foodPrice = tickets.values().stream().iterator() .next().getFood().getFoodPrice();
             //  foodPrice=tickets.get(i).getFood().getFoodPrice();
-        }
-     totalPrice = flightPrice + foodPrice;
+       // }
+             totalPrice = flightPrice + foodPrice;
 // }
        // totalPrice = flightPrice + foodPrice;
        // System.out.println(totalPrice);

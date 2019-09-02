@@ -174,7 +174,7 @@ public class ClientTest {
 
         System.out.println(ticket);
 
-        Double t= ticketDao.ticketPrice();
+        Double t= ticketDao.ticketPrice("P1");
         System.out.println(t);
 
     }

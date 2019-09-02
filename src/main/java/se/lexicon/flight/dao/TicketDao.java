@@ -8,6 +8,6 @@ public interface TicketDao {
 
     void bookTicket(Ticket ticket);
      Ticket searchTicketByTicketNo(String ticketNo);
-     Double ticketPrice();
+     Double ticketPrice(String passengerId);
      Collection<Ticket> getAllTickets();
 }
