@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86d368cd-af37-414c-950e-d2b84b926ec1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/TicketDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/dao/TicketDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/TicketDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/daoImpl/TicketDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/MainWithSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/flight/domain/MainWithSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/client/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/client/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/service/TicketServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/se/lexicon/flight/test/service/TicketServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/TicketDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/dao/TicketDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/TicketDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/daoImpl/TicketDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/MainWithSpring.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/se/lexicon/flight/domain/MainWithSpring.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/client/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/client/ClientTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/service/TicketServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/se/lexicon/flight/test/service/TicketServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/flight-1.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/flight-1.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.admin.AdminTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.admin.AdminTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.client.ClientTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.client.ClientTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.dao.AirlineDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.dao.AirlineDaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.dao.UsersDaoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.dao.UsersDaoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.service.FlightServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-se.lexicon.flight.test.service.FlightServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.admin.AdminTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.admin.AdminTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.client.ClientTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.client.ClientTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.AirlineDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.AirlineDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.FoodDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.FoodDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.PassengerDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.PassengerDaoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.UsersDaoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/se.lexicon.flight.test.dao.UsersDaoTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
