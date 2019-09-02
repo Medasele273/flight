@@ -28,9 +28,9 @@
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/daoImpl/UsersImpl.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/dao/TicketDao.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/admin/Admin.java
+/home/meda/Desktop/flight/src/main/java/se/lexicon/flight/domain/MainWithSpring.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/client/ClientImpl.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/daoImpl/TicketDaoImpl.java
-/home/meda/Desktop/flight/src/main/java/se/lexicon/flight/domain/Main.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/domain/Food.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/serviceImpl/TicketServiceImpl.java
 /home/meda/Desktop/flight/src/main/java/se/lexicon/flight/domain/EconomyClass.java

@@ -12,6 +12,7 @@ se/lexicon/flight/client/Client.class
 se/lexicon/flight/domain/Airline$1.class
 se/lexicon/flight/domain/Food$Builder.class
 se/lexicon/flight/serviceImpl/TicketServiceImpl.class
+se/lexicon/flight/domain/MainWithSpring.class
 se/lexicon/flight/domain/Passenger$1.class
 se/lexicon/flight/dao/FoodDao.class
 se/lexicon/flight/domain/Users.class
@@ -23,7 +24,6 @@ se/lexicon/flight/logIn/LogIn.class
 se/lexicon/flight/domain/Flight.class
 se/lexicon/flight/serviceImpl/FlightServiceImpl.class
 se/lexicon/flight/domain/EconomyClass.class
-se/lexicon/flight/domain/Main.class
 se/lexicon/flight/domain/Flight$Builder.class
 se/lexicon/flight/domain/DateUtil.class
 se/lexicon/flight/admin/Admin.class

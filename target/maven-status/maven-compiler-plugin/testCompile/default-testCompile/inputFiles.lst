@@ -11,3 +11,5 @@
 /home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/service/AirlineServiceTest.java
 /home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/admin/AdminTest.java
 /home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/FlightDaoTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/dao/FoodDaoTest.java
+/home/meda/Desktop/flight/src/test/java/se/lexicon/flight/test/service/TicketServiceTest.java
