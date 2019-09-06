@@ -2,6 +2,8 @@ package se.lexicon.flight.test.service;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.FlightDao;
 import se.lexicon.flight.daoImpl.FlightDaoImpl;
 import se.lexicon.flight.domain.Airline;
@@ -16,10 +18,9 @@ import java.util.List;
 
 public class FlightServiceTest {
 
-    FlightDao flightDao = new FlightDaoImpl();
-
-    FlightService flightService = new FlightServiceImpl(flightDao);
-
+    ApplicationContext applicationContext=new GenericXmlApplicationContext("DaoTire.xml","serviceTire.xml");
+    FlightDao flightDao =applicationContext.getBean(FlightDao.class);
+    FlightService flightService =applicationContext.getBean(FlightService.class);
 
     @Test
     public void testAddFlight(){

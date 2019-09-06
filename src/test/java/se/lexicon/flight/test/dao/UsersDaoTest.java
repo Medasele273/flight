@@ -1,6 +1,8 @@
 package se.lexicon.flight.test.dao;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.UsersDao;
 import se.lexicon.flight.daoImpl.UsersImpl;
 import se.lexicon.flight.domain.Users;
@@ -11,7 +13,9 @@ public class UsersDaoTest {
 
     @Test
     public void testAddUser(){
-        UsersDao usersDao = new UsersImpl();
+
+        ApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTire.xml");
+        UsersDao usersDao =applicationContext.getBean(UsersDao.class);
 
         //Create Users
 

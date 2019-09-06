@@ -1,6 +1,8 @@
 package se.lexicon.flight.test.admin;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.admin.Admin;
 import se.lexicon.flight.admin.AdminImpl;
 import se.lexicon.flight.dao.AirlineDao;
@@ -18,12 +20,21 @@ import java.util.Collection;
 
 public class AdminTest {
 
-    AirlineDao airlineDao = new AirlineDaoImpl();
+    ApplicationContext applicationContext =new GenericXmlApplicationContext("adminTire.xml","ClientTire.xml"
+    ,"DaoTire.xml","serviceTire.xml");
+
+    AirlineDao airlineDao =applicationContext.getBean(AirlineDao.class);
+    FlightDao flightDao = applicationContext.getBean(FlightDao.class);
+    PassengerDao passengerDao = applicationContext.getBean(PassengerDao.class);
+    UsersDao usersDao =applicationContext.getBean(UsersDao.class);
+    Admin admin =applicationContext.getBean(Admin.class);
+
+  /*  AirlineDao airlineDao = new AirlineDaoImpl();
     FlightDao flightDao = new FlightDaoImpl();
     PassengerDao passengerDao=new PassengerDaoImpl();
     UsersDao usersDao=new UsersImpl();
     Admin admin= new AdminImpl(airlineDao,flightDao,passengerDao,usersDao);
-
+*/
     @Test
     public void testAirline(){
 

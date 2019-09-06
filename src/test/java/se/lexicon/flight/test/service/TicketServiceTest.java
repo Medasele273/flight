@@ -1,6 +1,8 @@
 package se.lexicon.flight.test.service;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.TicketDao;
 import se.lexicon.flight.daoImpl.TicketDaoImpl;
 import se.lexicon.flight.domain.*;
@@ -11,11 +13,13 @@ import java.util.Collection;
 
 public class TicketServiceTest {
 
+    ApplicationContext applicationContext =new GenericXmlApplicationContext("DaoTire.xml","serviceTire.xml");
+    TicketDao ticketDao =applicationContext.getBean(TicketDao.class);
+    TicketService ticketService =applicationContext.getBean(TicketService.class);
+
     @Test
     public void testTicket(){
 
-        TicketDao ticketDao = new TicketDaoImpl();
-        TicketService ticketService =new TicketServiceImpl(ticketDao);
 
         Ticket ticket1 = Ticket.builder().withTicketNo("T01").withFlight(Flight.builder().withFlightNo("AA1")
                 .withFlightName(" AirBus A318")

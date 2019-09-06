@@ -1,6 +1,8 @@
 package se.lexicon.flight.test.dao;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.PassengerDao;
 import se.lexicon.flight.daoImpl.PassengerDaoImpl;
 import se.lexicon.flight.domain.Passenger;
@@ -17,7 +19,9 @@ public class PassengerDaoTest {
     @Test
     public void testAddPassenger(){
 
-        PassengerDao passengerDao = new PassengerDaoImpl();
+        ApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTire.xml");
+        PassengerDao passengerDao=applicationContext.getBean(PassengerDao.class);
+
 
         Passenger passenger1 =Passenger.builder()
                 .withPassengerId("P1")

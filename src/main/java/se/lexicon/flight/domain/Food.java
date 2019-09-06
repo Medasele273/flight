@@ -32,7 +32,7 @@ public class Food  {
         return "Food{" +
                 "foodName='" + foodName + '\'' +
                 ", foodPrice=" + foodPrice +
-                '}';
+                '}'+ '\n';
     }
 
     public static Builder builder(){

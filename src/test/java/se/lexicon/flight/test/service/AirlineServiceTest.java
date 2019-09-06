@@ -2,6 +2,8 @@ package se.lexicon.flight.test.service;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.AirlineDao;
 import se.lexicon.flight.daoImpl.AirlineDaoImpl;
 import se.lexicon.flight.domain.Airline;
@@ -12,12 +14,17 @@ import java.util.List;
 
 public class AirlineServiceTest {
 
+    ApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTire.xml","serviceTire.xml");
+    AirlineDao airlineDao = applicationContext.getBean(AirlineDao.class);
+
+    AirlineService airlineService = applicationContext.getBean(AirlineService.class);
+
     @Test
     public void testAddAirlineAndGetAirline(){
 
-        AirlineDao airlineDao = new AirlineDaoImpl();
 
-        //To create Airline
+
+              //To create Airline
 
         Airline airline1=Airline.builder().withId("01").withAirlineCode("LH").withAirlineName("Lufthansa").build();
         Airline airline2=Airline.builder().withId("02").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
@@ -26,7 +33,6 @@ public class AirlineServiceTest {
         airlineDao.addAirline(airline1);
         airlineDao.addAirline(airline2);
 
-        AirlineService airlineService = new AirlineServiceImpl(airlineDao);
 
         // TO get One Airline by Name
         System.out.println("Search Airline By Name  "  );
@@ -46,9 +52,7 @@ public class AirlineServiceTest {
     @Test
     public void testRemoveAirline(){
 
-        AirlineDao airlineDao = new AirlineDaoImpl();
-
-        //To create Airline
+              //To create Airline
 
         Airline airline3=Airline.builder().withId("03").withAirlineCode("LH").withAirlineName("Lufthansa").build();
         Airline airline4=Airline.builder().withId("04").withAirlineCode("ETH").withAirlineName("Ethiopian Airline").build();
@@ -57,7 +61,6 @@ public class AirlineServiceTest {
         airlineDao.addAirline(airline3);
         airlineDao.addAirline(airline4);
 
-        AirlineService airlineService = new AirlineServiceImpl(airlineDao);
 
         // To Check How many Airlines we have in Dao
 

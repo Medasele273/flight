@@ -3,6 +3,8 @@ package se.lexicon.flight.test.dao;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.AirlineDao;
 import se.lexicon.flight.daoImpl.AirlineDaoImpl;
 import se.lexicon.flight.domain.Airline;
@@ -15,8 +17,10 @@ public class AirlineDaoTest {
 
     @Test
     public void addAirlineTest(){
+         // using Spring to get dependency injection or Inversion-control  or loosely coupling
 
-        AirlineDao airlineDao =new AirlineDaoImpl();
+        ApplicationContext applicationContext=new GenericXmlApplicationContext("DaoTire.xml","serviceTire.xml");
+        AirlineDao airlineDao =applicationContext.getBean(AirlineDao.class);
 
         Airline airline1=Airline.builder().withId("1").withAirlineName("Lufthansa").withAirlineCode("DLH").build();
         Airline airline2=Airline.builder().withId("2").withAirlineName("Ethiopian airlines").withAirlineCode("EH").build();

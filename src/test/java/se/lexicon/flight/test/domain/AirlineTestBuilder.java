@@ -2,6 +2,9 @@ package se.lexicon.flight.test.domain;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+import se.lexicon.flight.dao.AirlineDao;
 import se.lexicon.flight.domain.Airline;
 
 public class AirlineTestBuilder {

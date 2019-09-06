@@ -48,11 +48,14 @@ public class MainWithSpring {
         Airline airline3 =  airlineDao.searchAirlineByName("Lufthansa");
         System.out.println(airline3);
 
+        TicketDao ticketDao =applicationContext.getBean(TicketDao.class);
+        FlightDao flightDao =applicationContext.getBean(FlightDao.class);
+
 
         LogIn logIn = new LoginClassImpl();
-        TicketDao ticketDao =new TicketDaoImpl();
-        FlightDao flightDao= new FlightDaoImpl();
-        Client client=new ClientImpl();
+      //  TicketDao ticketDao =new TicketDaoImpl();
+       // FlightDao flightDao= new FlightDaoImpl();
+
         Users admin = Users.builder().withUserName("Admin").withPassword("Admin123").withRole("Administrator").build();
         System.out.println("To Log In As Admin");
 

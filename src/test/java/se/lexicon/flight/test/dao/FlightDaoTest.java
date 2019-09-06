@@ -2,6 +2,8 @@ package se.lexicon.flight.test.dao;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.dao.FlightDao;
 import se.lexicon.flight.daoImpl.FlightDaoImpl;
 import se.lexicon.flight.domain.Airline;
@@ -20,7 +22,8 @@ public class FlightDaoTest {
         //  I have Tow Flights with different  Airlines but same DepartureCity ArrivalCity and DepartureDate
         // I have one Flight also which is different from the others
 
-        FlightDao flightDao =new FlightDaoImpl();
+        ApplicationContext applicationContext = new GenericXmlApplicationContext("DaoTire.xml");
+        FlightDao flightDao =applicationContext.getBean(FlightDao.class);
 
         Flight flight1=Flight.builder().withFlightNo("EK1")
                         .withFlightName("AirBus A380-800")

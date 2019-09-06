@@ -27,4 +27,11 @@
 
     </bean>
 
+    <bean id="usersDao" class="se.lexicon.flight.daoImpl.UsersImpl">
+
+    </bean>
+    <bean id="foodDao" class="se.lexicon.flight.daoImpl.FoodDaoImpl">
+
+    </bean>
+
 </beans>

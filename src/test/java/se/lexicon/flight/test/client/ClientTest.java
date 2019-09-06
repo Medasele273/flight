@@ -2,6 +2,8 @@ package se.lexicon.flight.test.client;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
 import se.lexicon.flight.client.Client;
 import se.lexicon.flight.client.ClientImpl;
 import se.lexicon.flight.dao.AirlineDao;
@@ -22,8 +24,16 @@ import java.util.Collection;
 
 public class ClientTest {
 
+    // using Spring to avoid hard coding and provide loosely  coupling
+    ApplicationContext applicationContext = new GenericXmlApplicationContext("ClientTire.xml","DaoTire.xml","serviceTire.xml");
 
-    AirlineDao airlineDao = new AirlineDaoImpl();
+    AirlineDao airlineDao = applicationContext.getBean(AirlineDao.class);
+    FlightDao flightDao =applicationContext.getBean(FlightDao.class);
+    TicketDao ticketDao =applicationContext.getBean(TicketDao.class);
+    Client client =applicationContext.getBean(Client.class);
+
+    // without spring
+   /* AirlineDao airlineDao = new AirlineDaoImpl();
     FlightDao flightDao =new FlightDaoImpl();
     TicketDao ticketDao = new TicketDaoImpl();
 
@@ -32,7 +42,7 @@ public class ClientTest {
     TicketService ticketService = new TicketServiceImpl(ticketDao);
 
     Client client = new ClientImpl(airlineService,flightService,ticketService);
-
+*/
     @Test
     public void testSearchAirlineByName(){
 
@@ -170,7 +180,8 @@ public class ClientTest {
 
         // Search Ticket By Ticket No
 
-        Ticket ticket = ticketService.searchTicket("T02");
+        Ticket ticket = ticketDao.searchTicketByTicketNo("T02");
+
 
         System.out.println(ticket);
 
